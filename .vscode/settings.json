@@ -1,0 +1,21 @@
+{
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.git/**": true,
+    "**/src/_includes/assets/**": true,
+    "**/src/scss/_tokens.scss": true
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/src/_includes/assets": true,
+    "**/src/scss/_tokens.scss": true
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.useExperimentalFileWatcher": true,
+  "git.ignoreLimitWarning": true,
+  "git.autorefresh": true
+}

@@ -56,7 +56,7 @@ module.exports = function(config) {
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
 
-  // 404
+  // Enhanced BrowserSync config for better file watching
   config.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, browserSync) {
@@ -68,7 +68,31 @@ module.exports = function(config) {
           res.end();
         });
       }
-    }
+    },
+    // Enhanced file watching for iCloud compatibility
+    files: [
+      'src/**/*',
+      '!src/**/*.tmp',
+      '!src/**/*.temp',
+      '!src/**/.*'
+    ],
+    watchOptions: {
+      ignoreInitial: false,
+      ignored: [
+        'node_modules/**',
+        'dist/**',
+        '.git/**',
+        '**/.DS_Store',
+        '**/Thumbs.db'
+      ],
+      usePolling: true,
+      interval: 1000,
+      binaryInterval: 3000
+    },
+    // Force reload on file changes
+    reloadDelay: 0,
+    reloadDebounce: 100,
+    reloadThrottle: 0
   });
 
   return {

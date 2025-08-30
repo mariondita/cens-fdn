@@ -1,8 +1,8 @@
 {
   "showThemeCredit": true,
-  "name": "Hylia Starter Kit",
-  "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
-  "url": "https://hylia.website",
+  "name": "Ciència en Societat",
+  "shortDesc": "La Fundació Ciència en Societat, neix el 2005 amb el propòsit de promoure i estimular la Cultura Científica entre la societat.",
+  "url": "https://censfdn.netlify.app",
   "authorEmail": "hi@piccalil.li",
   "authorHandle": "@piccalilli_",
   "authorName": "Andy Bell",
