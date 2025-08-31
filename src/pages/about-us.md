@@ -59,6 +59,6 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
 
 ## La Nostra Missió
 
-Amb tot, les nostres primeres actuacions prioritzen l'educació secundària com a actor potencialment cabdal de transmissió de la ciència i com via d'estímul a la creació de vocacions científiques.
+Tanmateix, l’abast de Ciència en Societat evoluciona progressivament ampliant la seva acció a tota la societat atenent al seu objectiu de transmetre el coneixement científic i l’aplicació del mètode per arribar a fomentar un esperit crític raonat i objectiu, propòsit que es concreta amb els encontres i la cooperació entre científics i una ciutadania de totes les edats activa. 
 
-El nostre objectiu és crear ponts entre la comunitat científica i la societat, fomentant la curiositat i el pensament crític en les noves generacions.
+Actualment, la Fundació torna als seus orígens centrant tota la seva activitat en l’educació, com a eix clau de transformació social i econòmic, i en concret al voltant de la conferència internacional STEAMConf Barcelona, que nascuda al 2014, ha contribuït a propiciar canvis profunds en el sistema educatiu, que avui formen part del dia a dia de moltes escoles i instituts i de programes institucionals públics i privats amb resultats que de forma urgent cal aprofundir, escalar i fer arribar capil·larment a tot el sistema educatiu. 
