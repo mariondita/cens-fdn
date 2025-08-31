@@ -6,12 +6,28 @@
         {% for item in postListItems %}
           {% if item.date.getTime() <= global.now %}
             <li class="post-list__item">
-              <h3 class="font-base leading-tight text-600 weight-mid">
-                <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
-              </h3>
-              <p class="text-500 gap-top-300 weight-mid">
-                <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-              </p>
+              <div class="post-card">
+                <div class="post-card__image">
+                  {% if item.data.image %}
+                    <img src="{{ item.data.image }}" alt="{{ item.data.title }}" loading="lazy">
+                  {% else %}
+                    <div class="post-card__placeholder">
+                      <span>📄</span>
+                    </div>
+                  {% endif %}
+                </div>
+                <div class="post-card__content">
+                  <h3 class="post-card__title">
+                    <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+                  </h3>
+                  <p class="post-card__date">
+                    <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+                  </p>
+                  {% if item.data.metaDesc %}
+                    <p class="post-card__description">{{ item.data.metaDesc }}</p>
+                  {% endif %}
+                </div>
+              </div>
             </li>
           {% endif %}
         {% endfor %}
