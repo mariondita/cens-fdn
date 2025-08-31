@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Ciència en Societat
-postsHeading: Latest posts
+title: Per la promoció i estimul de la Cultura Científica
+postsHeading: Notícies
 archiveButtonText: See all posts
 metaDesc: 'La Fundació Ciència en Societat, neix el 2005 amb el propòsit de promoure i estimular la Cultura Científica entre la societat.'
 ---
