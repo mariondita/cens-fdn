@@ -6,12 +6,12 @@
       "external": false
     },
     {
-      "text": "About us",
+      "text": "Nosaltres",
       "url": "/about-us",
       "external": true
     },
     {
-      "text": "Contact",
+      "text": "Contacte",
       "url": "/contact",
       "external": false
     }
