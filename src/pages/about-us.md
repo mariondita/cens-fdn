@@ -14,34 +14,45 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
 <div class="team-grid">
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/member-1.jpg" alt="Dr. Maria García" loading="lazy">
+      <img src="/images/team/paca-ciller.jpg" alt="Paca Cíller" loading="lazy">
     </div>
     <div class="team-member__info">
-      <h3 class="team-member__name">Dr. Maria García</h3>
+      <h3 class="team-member__name">Paca Cíller</h3>
+      <p class="team-member__title">Presidenta</p>
+      <p class="team-member__description">Activista de la cultura científica i tecnològica ha estat directora del Departament de Comunicació de la Fundació la Caixa, directora de Relacions Internacionals i Programes de CosmoCaixa, el Museu de la Ciència de Barcelona ​​i directora executiva de la Xarxa Europea de Centres i Museus de Ciència (ECSITE). Prèviament, i com a iniciativa de fi de carrera, funda amb dos companys de la Universitat de Barcelona l'empresa Staff 76 on, com a directora, organitza dos congressos internacionals en l'àmbit de l'educació, centrats en el joc i la joguina com a factor clau per sintonitzar els infants amb el món real i afavorir algunes de les seves més riques experiències d'aprenentatge.</p>
+    </div>
+  </div>
+
+  <div class="team-member">
+    <div class="team-member__image">
+      <img src="/images/team/mariona-jones.jpg" alt="Mariona N. Jones" loading="lazy">
+    </div>
+    <div class="team-member__info">
+      <h3 class="team-member__name">Mariona N. Jones</h3>
       <p class="team-member__title">Directora General</p>
-      <p class="team-member__description">La Dra. García lidera l'estratègia general de la fundació, centrant-se en el desenvolupament de programes educatius que connecten la ciència amb la societat.</p>
+      <p class="team-member__description">Fundadora i directora de STEAMConf Barcelona és Graduada cum laude per la Universitat d'Illinois (B.F.A.) i (M.Sc) on va ser Professora Assistent de la mateixa universitat, impartint classes d'eines de programari lliure i cultura oberta. La seva tesi, Free Culture Project, fusiona el poder de la tecnologia amb el poder transformador de l'educació. Postgraduada a Design Research & Management Educational Evaluation and Research per l'Institut Superior d'Educao i Ciències de Lisboa (ISEC), és diplomada en fabricació digital i electrònica per la Fab Academy (CBA-MIT). El 2015 SokoTech crea un laboratori d'innovació social digital a la frontera de les arts, la ciència i la tecnologia.</p>
     </div>
   </div>
 
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/member-2.jpg" alt="Dr. Carles Martínez" loading="lazy">
+      <img src="/images/team/coral-regi.jpg" alt="Coral Regí" loading="lazy">
     </div>
     <div class="team-member__info">
-      <h3 class="team-member__name">Dr. Carles Martínez</h3>
-      <p class="team-member__title">Director d'Educació Secundària</p>
-      <p class="team-member__description">El Dr. Martínez supervisa el treball per assegurar que preparem tots els estudiants per al èxit en l'educació superior i la carrera professional.</p>
+      <h3 class="team-member__name">Coral Regí</h3>
+      <p class="team-member__title">Secretaria General</p>
+      <p class="team-member__description">Llicenciada en Biologia per la Universitat de Barcelona i educadora per vocació, va ser Directora de l'Escola Virolai durant els darrers vint-i-cinc anys i actualment és assessora internacional en processos de transformació educativa, lideratge i avaluació formativa. És membre del Consell Escolar de Catalunya com a persona de prestigi,membre del comitè científic del projecte Educació Demà i de la Junta de la Societat Catalana de Pedagogia.</p>
     </div>
   </div>
 
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/member-3.jpg" alt="Dra. Anna López" loading="lazy">
+      <img src="/images/team/eli-cuspinera.jpg" alt="Eli Cuspinera" loading="lazy">
     </div>
     <div class="team-member__info">
-      <h3 class="team-member__name">Dra. Anna López</h3>
-      <p class="team-member__title">Directora de Programes</p>
-      <p class="team-member__description">La Dra. López lidera un equip que es centra en el desenvolupament i l'escalabilitat d'estratègies innovadores per ajudar els estudiants en la transició de l'escola secundària a l'educació postsecundària.</p>
+      <h3 class="team-member__name">Elisabet Cuspinera</h3>
+      <p class="team-member__title">Tesorera</p>
+      <p class="team-member__description">Professora de dibuix per l'Escola Superior de Belles Arts de San Fernando, master en gestió cultural art i museologia per la Universitat de Nova York, va ser al llarg de 22 anys assessora cultural al Consolat d'Espanya a Nova York i col.laborat amb el Courant Institute of Mathematical Sciences de la New YorK University. Aporta aquesta experiència i coneixement per complir el mandat de la Fundació estímul i impuls de la cultura científica i tecnológica, (STEAM ) en particular entre la comunitat educativa.</p>
     </div>
   </div>
 </div>
