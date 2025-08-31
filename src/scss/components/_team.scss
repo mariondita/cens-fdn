@@ -1,6 +1,6 @@
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: get-size(800);
   margin: get-size(800) 0;
 }
@@ -79,5 +79,12 @@
     &__info {
       padding: get-size(500);
     }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: get-size(600);
   }
 }
