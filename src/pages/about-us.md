@@ -14,7 +14,7 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
 <div class="team-grid">
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/paca-ciller.jpg?v=2" alt="Paca Cíller" loading="lazy">
+      <img src="/images/team/paca-ciller.jpg" alt="Paca Cíller" loading="lazy">
     </div>
     <div class="team-member__info">
       <h3 class="team-member__name">Paca Cíller</h3>
@@ -25,7 +25,7 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
 
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/mariona-jones.jpg?v=2" alt="Mariona N. Jones" loading="lazy">
+      <img src="/images/team/mariona-jones.jpg" alt="Mariona N. Jones" loading="lazy">
     </div>
     <div class="team-member__info">
       <h3 class="team-member__name">Mariona N. Jones</h3>
@@ -36,7 +36,7 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
 
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/coral-regi.jpg?v=2" alt="Coral Regí" loading="lazy">
+      <img src="/images/team/coral-regi.jpg" alt="Coral Regí" loading="lazy">
     </div>
     <div class="team-member__info">
       <h3 class="team-member__name">Coral Regí</h3>
@@ -47,7 +47,7 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
 
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/eli-cuspinera.jpg?v=2" alt="Eli Cuspinera" loading="lazy">
+      <img src="/images/team/eli-cuspinera.jpg" alt="Eli Cuspinera" loading="lazy">
     </div>
     <div class="team-member__info">
       <h3 class="team-member__name">Elisabet Cuspinera</h3>
