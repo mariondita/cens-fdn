@@ -1,5 +1,5 @@
 ---
-title: 'Contact - Fundació Ciència en Societat'
+title: 'Contact'
 permalink: '/contact/index.html'
 layout: 'layouts/page.njk'
 metaDesc: 'Contacta amb la Fundació Ciència en Societat.'
