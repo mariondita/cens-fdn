@@ -1,7 +1,20 @@
 ---
-title: 'Contact'
+title: 'Contact - Fundació Ciència en Societat'
 permalink: '/contact/index.html'
-layout: 'layouts/contact.njk'
+layout: 'layouts/page.njk'
+metaDesc: 'Contacta amb la Fundació Ciència en Societat.'
 ---
- 
-To delete the contact form for this site, delete this page in the CMS or at `src/pages/contact.md`. You probably will also want to delete `src/pages/thank-you.md`.
+
+# Contacta amb Nosaltres
+
+Estem aquí per ajudar-te i respondre qualsevol pregunta sobre la Fundació Ciència en Societat.
+
+## Informació de Contacte
+
+**Email:** info@cienciaensocietat.org  
+**Telèfon:** +34 93 XXX XX XX  
+**Adreça:** Barcelona, Catalunya
+
+## Enviar Missatge
+
+Si tens alguna pregunta o vols col·laborar amb nosaltres, no dubtis a contactar-nos. 
