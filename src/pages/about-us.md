@@ -5,14 +5,13 @@ layout: 'layouts/page.njk'
 metaDesc: 'Conèix la Fundació Ciència en Societat, dedicada a promoure la cultura científica des del 2005.'
 ---
 
-# L'Equip de la Fundació
+## La Nostra Missió
+Tanmateix, l’abast de Ciència en Societat evoluciona progressivament ampliant la seva acció a tota la societat atenent al seu objectiu de transmetre el coneixement científic i l’aplicació del mètode per arribar a fomentar un esperit crític raonat i objectiu, propòsit que es concreta amb els encontres i la cooperació entre científics i una ciutadania de totes les edats activa. 
 
-La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i estimular la Cultura Científica entre la societat. El nostre equip treballa per fomentar la transmissió de la ciència i l'estímul a la creació de vocacions científiques.
+Actualment, la Fundació torna als seus orígens centrant tota la seva activitat en l’educació, com a eix clau de transformació social i econòmic, i en concret al voltant de la conferència internacional STEAMConf Barcelona, que nascuda al 2014, ha contribuït a propiciar canvis profunds en el sistema educatiu, que avui formen part del dia a dia de moltes escoles i instituts i de programes institucionals públics i privats amb resultats que de forma urgent cal aprofundir, escalar i fer arribar capil·larment a tot el sistema educatiu. 
 
 
-
-## El Nostre Equip
-
+# L'Equip
 <div class="team-grid">
   <div class="team-member">
     <div class="team-member__image">
@@ -47,9 +46,3 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
     </div>
   </div>
 </div>
-
-## La Nostra Missió
-
-Tanmateix, l’abast de Ciència en Societat evoluciona progressivament ampliant la seva acció a tota la societat atenent al seu objectiu de transmetre el coneixement científic i l’aplicació del mètode per arribar a fomentar un esperit crític raonat i objectiu, propòsit que es concreta amb els encontres i la cooperació entre científics i una ciutadania de totes les edats activa. 
-
-Actualment, la Fundació torna als seus orígens centrant tota la seva activitat en l’educació, com a eix clau de transformació social i econòmic, i en concret al voltant de la conferència internacional STEAMConf Barcelona, que nascuda al 2014, ha contribuït a propiciar canvis profunds en el sistema educatiu, que avui formen part del dia a dia de moltes escoles i instituts i de programes institucionals públics i privats amb resultats que de forma urgent cal aprofundir, escalar i fer arribar capil·larment a tot el sistema educatiu. 
