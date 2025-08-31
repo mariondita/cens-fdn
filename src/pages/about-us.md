@@ -1,5 +1,5 @@
 ---
-title: 'About Us'
+title: 'Nosaltres'
 permalink: '/about-us/index.html'
 layout: 'layouts/page.njk'
 metaDesc: 'Conèix la Fundació Ciència en Societat, dedicada a promoure la cultura científica des del 2005.'
@@ -11,7 +11,7 @@ Tanmateix, l’abast de Ciència en Societat evoluciona progressivament ampliant
 Actualment, la Fundació torna als seus orígens centrant tota la seva activitat en l’educació, com a eix clau de transformació social i econòmic, i en concret al voltant de la conferència internacional STEAMConf Barcelona, que nascuda al 2014, ha contribuït a propiciar canvis profunds en el sistema educatiu, que avui formen part del dia a dia de moltes escoles i instituts i de programes institucionals públics i privats amb resultats que de forma urgent cal aprofundir, escalar i fer arribar capil·larment a tot el sistema educatiu. 
 
 
-# L'Equip
+## L'Equip
 <div class="team-grid">
   <div class="team-member">
     <div class="team-member__image">
