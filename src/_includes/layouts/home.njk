@@ -13,13 +13,16 @@
     {% include "partials/components/intro.njk" %}
     
     <div class="[ inner-wrapper ] [ sf-flow ]">
-      {% include "partials/components/feature-card.njk" with {
-        image: "/images/team/paca-ciller.jpg",
-        imageAlt: "Fundació Ciència en Societat building",
-        title: "Educació Científica",
-        description: "La Fundació Ciència en Societat promou l'educació científica i tecnològica entre els joves, fomentant la curiositat i l'esperit crític necessaris per a un futur sostenible.",
-        caption: "Fundació Ciència en Societat, Barcelona. ©Fundació Ciència en Societat"
-      } %}
+      <div class="feature-card">
+        <div class="feature-card__image">
+          <img src="/images/team/paca-ciller.jpg" alt="Fundació Ciència en Societat building" loading="lazy">
+          <p class="feature-card__caption">Fundació Ciència en Societat, Barcelona. ©Fundació Ciència en Societat</p>
+        </div>
+        <div class="feature-card__content">
+          <h2 class="feature-card__title">Educació Científica</h2>
+          <p class="feature-card__description">La Fundació Ciència en Societat promou l'educació científica i tecnològica entre els joves, fomentant la curiositat i l'esperit crític necessaris per a un futur sostenible.</p>
+        </div>
+      </div>
     </div>
   </main>
 {% endblock %}
