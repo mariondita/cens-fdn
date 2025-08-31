@@ -8,7 +8,7 @@
 
 {# Post list content #}
 {% set postListHeading = postsHeading %}
-{% set postListItems = collections.postFeed %}
+{% set postListItems = [] %}
 
 {# Archive link #}
 {% if postListItems.length < collections.posts.length %} 
@@ -19,7 +19,9 @@
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
-    {% include "partials/components/post-list.njk" %}
-    {% include "partials/components/pagination.njk" %}
+    {% if postListItems.length > 0 %}
+      {% include "partials/components/post-list.njk" %}
+      {% include "partials/components/pagination.njk" %}
+    {% endif %}
   </main>
 {% endblock %}
