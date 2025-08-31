@@ -24,10 +24,15 @@ module.exports = function(value, outputPath) {
         const file = image.getAttribute('src');
         
         if (file.indexOf('http') < 0) {
-          const dimensions = getSize('src' + file);
-          
-          image.setAttribute('width', dimensions.width);
-          image.setAttribute('height', dimensions.height);;
+          try {
+            const dimensions = getSize('src' + file);
+            
+            image.setAttribute('width', dimensions.width);
+            image.setAttribute('height', dimensions.height);
+          } catch (error) {
+            console.warn(`Warning: Could not get dimensions for image: ${file}`);
+            // Continue processing without dimensions if image is missing
+          }
         }
 
         // If an image has a title it means that the user added a caption
