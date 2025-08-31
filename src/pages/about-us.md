@@ -25,17 +25,6 @@ La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i es
 
   <div class="team-member">
     <div class="team-member__image">
-      <img src="/images/team/mariona-jones.jpg" alt="Mariona N. Jones" loading="lazy">
-    </div>
-    <div class="team-member__info">
-      <h3 class="team-member__name">Mariona N. Jones</h3>
-      <p class="team-member__title">Directora General</p>
-      <p class="team-member__description">Fundadora i directora de STEAMConf Barcelona és Graduada cum laude per la Universitat d'Illinois (B.F.A.) i (M.Sc) on va ser Professora Assistent de la mateixa universitat, impartint classes d'eines de programari lliure i cultura oberta. La seva tesi, Free Culture Project, fusiona el poder de la tecnologia amb el poder transformador de l'educació. Postgraduada a Design Research & Management Educational Evaluation and Research per l'Institut Superior d'Educao i Ciències de Lisboa (ISEC), és diplomada en fabricació digital i electrònica per la Fab Academy (CBA-MIT). El 2015 SokoTech crea un laboratori d'innovació social digital a la frontera de les arts, la ciència i la tecnologia.</p>
-    </div>
-  </div>
-
-  <div class="team-member">
-    <div class="team-member__image">
       <img src="/images/team/coral-regi.jpg" alt="Coral Regí" loading="lazy">
     </div>
     <div class="team-member__info">
