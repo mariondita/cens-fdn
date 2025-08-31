@@ -6,18 +6,22 @@
   {{ content | safe }}
 {% endset %}
 
-{# Post list content - Disabled #}
-{# {% set postListHeading = postsHeading %} #}
-{# {% set postListItems = [] %} #}
+{# Post list content #}
+{% set postListHeading = postsHeading %}
+{% set postListItems = collections.postFeed %}
 
-{# Archive link - Disabled #}
-{# {% if postListItems.length < collections.posts.length %} #}
-{#   {% set paginationNextText = archiveButtonText %} #}
-{#   {% set paginationNextUrl = '/archive' %} #}
-{# {% endif %} #}
+{# Archive link #}
+{% if postListItems.length < collections.posts.length %} 
+  {% set paginationNextText = archiveButtonText %}
+  {% set paginationNextUrl = '/archive' %}
+{% endif %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
+    {% if postListItems.length > 0 %}
+      {% include "partials/components/post-list.njk" %}
+      {% include "partials/components/pagination.njk" %}
+    {% endif %}
   </main>
 {% endblock %}
