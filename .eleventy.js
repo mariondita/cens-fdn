@@ -49,6 +49,7 @@ module.exports = function(config) {
   config.addCollection('postFeed', collection => {
     return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
       .reverse()
+      .filter(post => post.fileSlug === 'a-simple-post')
       .slice(0, site.maxPostsPerPage);
   });
 
