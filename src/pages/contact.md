@@ -5,6 +5,7 @@ layout: 'layouts/page.njk'
 metaDesc: 'Contacta amb la Fundació Ciència en Societat.'
 ---
 
+
 ## Informació de Contacte
 
 **Email:** info@cienciaensocietat.org  
