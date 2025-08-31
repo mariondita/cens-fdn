@@ -15,11 +15,11 @@
   }
 
   &__heading {
-    max-width: 40ex;
+    max-width: 120ex;
     color: var(--color-theme-feature-text);
 
     &--compact {
-      max-width: 20ex;
+      max-width: 120ex;
     }
   }
 }
