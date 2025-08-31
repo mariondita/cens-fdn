@@ -6,22 +6,20 @@
   {{ content | safe }}
 {% endset %}
 
-{# Post list content #}
-{% set postListHeading = postsHeading %}
-{% set postListItems = collections.postFeed %}
-
-{# Archive link #}
-{% if postListItems.length < collections.posts.length %} 
-  {% set paginationNextText = archiveButtonText %}
-  {% set paginationNextUrl = '/archive' %}
-{% endif %}
+{# Feature card content #}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
-    {% if postListItems.length > 0 %}
-      {% include "partials/components/post-list.njk" %}
-      {% include "partials/components/pagination.njk" %}
-    {% endif %}
+    
+    <div class="[ inner-wrapper ] [ sf-flow ]">
+      {% include "partials/components/feature-card.njk" with {
+        image: "/images/team/paca-ciller.jpg",
+        imageAlt: "Fundació Ciència en Societat building",
+        title: "Educació Científica",
+        description: "La Fundació Ciència en Societat promou l'educació científica i tecnològica entre els joves, fomentant la curiositat i l'esperit crític necessaris per a un futur sostenible.",
+        caption: "Fundació Ciència en Societat, Barcelona. ©Fundació Ciència en Societat"
+      } %}
+    </div>
   </main>
 {% endblock %}
