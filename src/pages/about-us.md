@@ -9,7 +9,7 @@ metaDesc: 'Conèix la Fundació Ciència en Societat, dedicada a promoure la cul
 
 La Fundació Ciència en Societat neix el 2005 amb el propòsit de promoure i estimular la Cultura Científica entre la societat. El nostre equip treballa per fomentar la transmissió de la ciència i l'estímul a la creació de vocacions científiques.
 
-## El Nostre Equip {.no-permalink}
+## El Nostre Equip
 
 <div class="team-grid">
   <div class="team-member">
