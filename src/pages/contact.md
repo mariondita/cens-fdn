@@ -1,5 +1,5 @@
 ---
-title: 'Contact'
+title: 'Contacte'
 permalink: '/contact/index.html'
 layout: 'layouts/page.njk'
 metaDesc: 'Contacta amb la Fundació Ciència en Societat.'
@@ -8,8 +8,8 @@ metaDesc: 'Contacta amb la Fundació Ciència en Societat.'
 
 ## Informació de Contacte
 
-**Email:** info@cienciaensocietat.org  
-**Telèfon:** +34 93 XXX XX XX  
+**Email:** paca@soko.tech  
+**Telèfon:** +34 650 41 27 26  
 **Adreça:** Barcelona, Catalunya
 
 ## Enviar Missatge
