@@ -1,5 +1,5 @@
 ---
-title: 'About Us - Fundació Ciència en Societat'
+title: 'About Us'
 permalink: '/about-us/index.html'
 layout: 'layouts/page.njk'
 metaDesc: 'Conèix la Fundació Ciència en Societat, dedicada a promoure la cultura científica des del 2005.'
