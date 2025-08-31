@@ -43,14 +43,19 @@ module.exports = function(config) {
   config.addCollection('posts', collection => {
     return [
       ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
-    ].reverse();
+    ].reverse().filter(post => !post.inputPath.includes('/archive/'));
   });
 
   config.addCollection('postFeed', collection => {
     return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
       .reverse()
-      .filter(post => post.fileSlug === 'a-simple-post')
+      .filter(post => !post.inputPath.includes('/archive/'))
       .slice(0, site.maxPostsPerPage);
+  });
+
+  config.addCollection('archivedPosts', collection => {
+    return [...collection.getFilteredByGlob('./src/posts/archive/*.md').filter(livePosts)]
+      .reverse();
   });
 
   // Plugins
