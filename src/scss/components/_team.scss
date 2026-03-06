@@ -140,22 +140,29 @@
     }
   }
 
+  &__name,
+  &__title {
+    margin-left: 0;
+    margin-right: 3rem;
+    text-align: left;
+  }
+
   &__name {
     font-size: get-size(600);
     font-weight: 700;
     color: var(--color-text);
-    margin: 0 3rem get-size(200) 0;
+    margin-top: 0;
+    margin-bottom: get-size(200);
     padding-right: 0;
     line-height: 1.2;
-    text-align: left;
   }
 
   &__title {
     font-size: get-size(500);
     font-weight: 400;
     color: var(--color-text-muted);
-    margin: 0 0 get-size(500) 0;
-    text-align: left;
+    margin-top: 0;
+    margin-bottom: get-size(500);
   }
 
   &__bio {
