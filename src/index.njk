@@ -1,0 +1,15 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang.code }}/index.html"
+layout: home
+pageKey: ""
+---
+
+{% set t = i18n[lang.code] %}
+{% set title = t.home.title %}
+{% set metaDesc = t.home.metaDesc %}
+{% set introHeading = t.home.title %}
+{% set introSummary %}{{ t.home.intro }}{% endset %}

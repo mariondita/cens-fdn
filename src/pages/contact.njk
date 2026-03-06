@@ -1,0 +1,21 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang.code }}/contact/index.html"
+layout: layouts/page.njk
+pageKey: "contact"
+---
+
+{% set t = i18n[lang.code] %}
+{% set title = t.contact.title %}
+{% set metaDesc = t.contact.metaDesc %}
+{% set introHeading = t.contact.title %}
+
+<div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-300 pad-bottom-900 text-500 ] [ sf-flow ] [ e-content ]">
+  <h2>{{ t.contact.heading }}</h2>
+  <p><strong>{{ t.contact.emailLabel }}:</strong> {{ t.contact.email }}</p>
+  <p><strong>{{ t.contact.phoneLabel }}:</strong> {{ t.contact.phone }}</p>
+  <p><strong>{{ t.contact.addressLabel }}:</strong> {{ t.contact.address }}</p>
+</div>

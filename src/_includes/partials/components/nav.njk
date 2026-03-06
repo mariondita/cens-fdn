@@ -1,7 +1,8 @@
-{% if navigation.items %}
+{% set items = navItems | default(navigation.items) %}
+{% if items %}
   <nav class="nav" aria-label="{{ariaLabel}}">
     <ul class="[ nav__list ] [ box-flex align-center md:space-before ]">
-      {% for item in navigation.items %}
+      {% for item in items %}
         {% set relAttribute = '' %}
         {% set currentAttribute = '' %}
 

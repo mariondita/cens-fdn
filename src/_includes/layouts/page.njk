@@ -1,7 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
-{# Intro content #}
-{% set introHeading = title %}
+{# Intro content (child can override via t) #}
+{% set introHeading = introHeading or title %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
@@ -13,5 +13,3 @@
     </article>
   </main>
 {% endblock %}
-
-{{ content | safe }}

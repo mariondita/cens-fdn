@@ -1,6 +1,6 @@
-{% set pageTitle = title + ' - ' + site.name %}
+{% set siteTitle = t.siteName if t else site.name %}
+{% set pageTitle = title + ' - ' + siteTitle %}
 {% set pageDesc = '' %}
-{% set siteTitle = site.name %}
 {% set currentUrl = site.url + page.url %}
 
 {% if metaTitle %}

@@ -1,3 +1,17 @@
 [build]
   command = "npm run production"
   publish = "dist"
+
+# Redirect root and legacy Catalan URLs to /ca/ so old links keep working
+[[redirects]]
+  from = "/"
+  to = "/ca/"
+  status = 302
+[[redirects]]
+  from = "/about-us"
+  to = "/ca/about-us/"
+  status = 302
+[[redirects]]
+  from = "/contact"
+  to = "/ca/contact/"
+  status = 302

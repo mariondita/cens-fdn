@@ -1,13 +1,28 @@
-<a class="skip-link" href="#main-content">Skip to content</a>
+{% set currentLang = lang | default({ code: "ca", name: "Català", default: true }) %}
+{% set navItems = navItems | default(navigation.items) %}
+{% set siteNameForLang = t.siteName if t else site.name %}
+{% set homeLabel = t.common.home if t else "Home" %}
+<a class="skip-link" href="#main-content">{{ t.common.skipToContent if t else "Skip to content" }}</a>
 <header role="banner" class="[ site-head ] [ pad-top-700 pad-bottom-700 ]">
   <div class="wrapper">
     <div class="[ site-head__inner ] [ md:box-flex space-between align-center ]">
-      <a href="/" class="[ site-head__site-name ] [ leading-tight ] [ box-flex align-center ]">
-        <img src="/images/CenS.png?v=1" alt="Ciència en Societat Logo" class="[ site-head__logo ] [ max-width-150 ]" loading="lazy">
-        <span class="visually-hidden">{{ site.name }} - Home</span>
+      <a href="/{{ currentLang.code }}/" class="[ site-head__site-name ] [ leading-tight ] [ box-flex align-center ]">
+        <img src="/images/CenS.png?v=1" alt="{{ siteNameForLang }} Logo" class="[ site-head__logo ] [ max-width-150 ]" loading="lazy">
+        <span class="visually-hidden">{{ siteNameForLang }} - {{ homeLabel }}</span>
       </a>
       {% set ariaLabel = 'navigation' %}
       {% include "partials/components/nav.njk" %}
+      {% if languages and lang %}
+      <nav class="nav nav--lang" aria-label="Language">
+        <ul class="[ nav__list ] [ box-flex align-center ]">
+          {% for l in languages %}
+          <li class="nav__item">
+            <a href="/{{ l.code }}/{% if pageKey %}{{ pageKey }}/{% endif %}"{% if l.code == currentLang.code %} aria-current="page"{% endif %} class="nav__link nav__link--lang">{{ l.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
     </div>
   </div>
 </header>

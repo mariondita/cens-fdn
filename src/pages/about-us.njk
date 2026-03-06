@@ -1,0 +1,35 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang.code }}/about-us/index.html"
+layout: layouts/page.njk
+pageKey: "about-us"
+---
+
+{% set t = i18n[lang.code] %}
+{% set title = t.about.title %}
+{% set metaDesc = t.about.metaDesc %}
+{% set introHeading = t.about.title %}
+
+<div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-300 pad-bottom-900 text-500 ] [ sf-flow ] [ e-content ]">
+  <h2>{{ t.about.missionHeading }}</h2>
+  {{ t.about.missionBody | markdownFilter | safe }}
+
+  <h2>{{ t.about.teamHeading }}</h2>
+  <div class="team-grid">
+    {% for member in t.about.team %}
+    <div class="team-member">
+      <div class="team-member__image">
+        <img src="/images/team/{{ member.image }}" alt="{{ member.name }}" loading="lazy">
+      </div>
+      <div class="team-member__info">
+        <h3 class="team-member__name">{{ member.name }}</h3>
+        <p class="team-member__title">{{ member.role }}</p>
+        <p class="team-member__description">{{ member.bio }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

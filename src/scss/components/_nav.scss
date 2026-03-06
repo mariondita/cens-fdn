@@ -44,5 +44,17 @@
       }
     }
   }
+
+  &--lang {
+    .nav__list {
+      border-left: 1px solid var(--color-text-muted, currentColor);
+      padding-left: get-size(500);
+      margin-left: get-size(500);
+    }
+    .nav__item a {
+      font-size: 0.85rem;
+      text-transform: none;
+    }
+  }
 }
 
