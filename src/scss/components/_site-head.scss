@@ -1,7 +1,7 @@
 .site-head {
   background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
-  
+
   .wrapper {
     max-width: 53rem;
     margin-left: auto;
@@ -9,7 +9,18 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
-  
+
+  // Mobile: logo left, globe right (same row); nav full width below
+  &__inner {
+    @media (max-width: 47.9375rem) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto auto;
+      align-items: center;
+      gap: 0.75rem 1rem;
+    }
+  }
+
   &__site-name {
     font-weight: 600;
     text-decoration: none;
@@ -17,11 +28,30 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.02em;
+
+    @media (max-width: 47.9375rem) {
+      grid-column: 1;
+      grid-row: 1;
+    }
   }
 
   &__logo {
     height: auto;
     max-height: 70px;
     display: block;
+  }
+}
+
+// Mobile: nav on second row, full width; globe on first row right
+@media (max-width: 47.9375rem) {
+  .site-head .nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .site-head .lang-dropdown {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 0;
   }
 }
