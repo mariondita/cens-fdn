@@ -85,6 +85,10 @@
   padding: get-size(500);
   pointer-events: none;
 
+  &[hidden] {
+    display: none !important;
+  }
+
   &:not([hidden]) {
     pointer-events: auto;
   }

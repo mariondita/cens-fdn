@@ -48,18 +48,24 @@ pageKey: "about-us"
     (function() {
       var cards = document.querySelectorAll('.team-card[data-team-index]');
       var modals = document.querySelectorAll('.team-modal');
+      var modalsWrap = document.querySelector('.team-modals');
       function openModal(index) {
         var modal = document.getElementById('team-modal-' + index);
         if (!modal) return;
         modal.removeAttribute('hidden');
-        modal.closest('.team-modals').setAttribute('aria-hidden', 'false');
+        if (modalsWrap) modalsWrap.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
       }
       function closeModal() {
         modals.forEach(function(m) { m.setAttribute('hidden', ''); });
-        document.querySelector('.team-modals').setAttribute('aria-hidden', 'true');
+        if (modalsWrap) modalsWrap.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
       }
+      // Never open a modal on load (e.g. when arriving via "US" link or URL hash)
+      if (window.location.hash && window.location.hash.indexOf('team-modal') !== -1) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+      closeModal();
       cards.forEach(function(card) {
         card.addEventListener('click', function() { openModal(this.getAttribute('data-team-index')); });
       });
