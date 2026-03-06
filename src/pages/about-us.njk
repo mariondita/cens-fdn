@@ -20,16 +20,15 @@ pageKey: "about-us"
   <h2>{{ t.about.teamHeading }}</h2>
   <div class="team-grid">
     {% for member in t.about.team %}
-    <div class="team-member">
-      <div class="team-member__image">
+    <article class="team-card">
+      <div class="team-card__image">
         <img src="/images/team/{{ member.image }}" alt="{{ member.name }}" loading="lazy">
       </div>
-      <div class="team-member__info">
-        <h3 class="team-member__name">{{ member.name }}</h3>
-        <p class="team-member__title">{{ member.role }}</p>
-        <p class="team-member__description">{{ member.bio }}</p>
-      </div>
-    </div>
+      <h3 class="team-card__name">{{ member.name }}</h3>
+      <p class="team-card__title">{{ member.role }}</p>
+      <p class="team-card__description">{{ member.bio }}</p>
+      <a href="{{ member.profileUrl or '#' }}" class="team-card__link">{{ t.about.viewProfile }}</a>
+    </article>
     {% endfor %}
   </div>
 </div>
