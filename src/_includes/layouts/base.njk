@@ -1,5 +1,14 @@
 {% set currentLang = lang | default({ code: "ca", name: "Català", default: true }) %}
 {% set langT = i18n[currentLang.code] %}
+{% if langT and title is undefined and pageKey is defined %}
+{% if pageKey == "" %}
+{% set title = langT.home.title %}
+{% elif pageKey == "about-us" %}
+{% set title = langT.about.title %}
+{% elif pageKey == "contact" %}
+{% set title = langT.contact.title %}
+{% endif %}
+{% endif %}
 {% if langT %}
 {% set navItems = [
   { text: langT.nav.home, url: "/" + currentLang.code + "/" },
