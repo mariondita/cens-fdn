@@ -39,7 +39,7 @@ module.exports = {
       emailLabel: 'Email',
       phoneLabel: 'Telèfon',
       addressLabel: 'Adreça',
-      email: 'paca@soko.tech',
+      email: 'admin@soko.tech',
       phone: '+34 650 41 27 26',
       address: 'Barcelona, Catalunya'
     },
@@ -88,7 +88,7 @@ module.exports = {
       emailLabel: 'Email',
       phoneLabel: 'Teléfono',
       addressLabel: 'Dirección',
-      email: 'paca@soko.tech',
+      email: 'admin@soko.tech',
       phone: '+34 650 41 27 26',
       address: 'Barcelona, Catalunya'
     },
@@ -137,7 +137,7 @@ module.exports = {
       emailLabel: 'Email',
       phoneLabel: 'Phone',
       addressLabel: 'Address',
-      email: 'paca@soko.tech',
+      email: 'admin@soko.tech',
       phone: '+34 650 41 27 26',
       address: 'Barcelona, Catalunya'
     },
