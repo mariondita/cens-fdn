@@ -2,17 +2,17 @@
   "items": [
     {
       "text": "Home",
-      "url": "/",
+      "url": "/ca/",
       "external": false
     },
     {
       "text": "Nosaltres",
-      "url": "/about-us",
-      "external": true
+      "url": "/ca/about-us/",
+      "external": false
     },
     {
       "text": "Contacte",
-      "url": "/contact",
+      "url": "/ca/contact/",
       "external": false
     }
   ]
