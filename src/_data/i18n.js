@@ -50,8 +50,8 @@ module.exports = {
     siteName: 'Ciencia en Sociedad',
     siteShortDesc: 'La Fundación Ciencia en Sociedad nace en 2005 con el propósito de promover y estimular la Cultura Científica en la sociedad.',
     nav: {
-      home: 'Inicio',
-      about: 'Nosotros',
+      home: 'Home',
+      about: 'Nosotras',
       contact: 'Contacto'
     },
     home: {
@@ -98,7 +98,7 @@ module.exports = {
     siteShortDesc: 'The Science in Society Foundation was established in 2005 to promote and foster Scientific Culture in society.',
     nav: {
       home: 'Home',
-      about: 'About us',
+      about: 'Us',
       contact: 'Contact'
     },
     home: {
