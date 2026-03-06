@@ -13,15 +13,18 @@
       {% set ariaLabel = 'navigation' %}
       {% include "partials/components/nav.njk" %}
       {% if languages and lang %}
-      <nav class="nav nav--lang" aria-label="Language">
-        <ul class="[ nav__list ] [ box-flex align-center ]">
+      <div class="lang-dropdown">
+        <button type="button" class="lang-dropdown__trigger" aria-expanded="false" aria-haspopup="true" aria-label="Choose language" title="Choose language">
+          {% include "icons/globe.svg" %}
+        </button>
+        <ul class="lang-dropdown__list" role="menu" aria-label="Language options">
           {% for l in languages %}
-          <li class="nav__item">
-            <a href="/{{ l.code }}/{% if pageKey %}{{ pageKey }}/{% endif %}"{% if l.code == currentLang.code %} aria-current="page"{% endif %} class="nav__link nav__link--lang" title="{{ l.name }}">{{ l.menu }}</a>
+          <li role="none">
+            <a href="/{{ l.code }}/{% if pageKey %}{{ pageKey }}/{% endif %}" role="menuitem"{% if l.code == currentLang.code %} aria-current="page"{% endif %} class="lang-dropdown__link" title="{{ l.name }}">{{ l.menu }}</a>
           </li>
           {% endfor %}
         </ul>
-      </nav>
+      </div>
       {% endif %}
     </div>
   </div>

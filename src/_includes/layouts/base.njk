@@ -40,6 +40,23 @@
         navigator.serviceWorker.register('/service-worker.js');
       });
     }
+    // Language dropdown: toggle on button click, close on outside click
+    (function() {
+      var trigger = document.querySelector('.lang-dropdown__trigger');
+      var dropdown = document.querySelector('.lang-dropdown');
+      if (!trigger || !dropdown) return;
+      trigger.addEventListener('click', function() {
+        var open = trigger.getAttribute('aria-expanded') === 'true';
+        trigger.setAttribute('aria-expanded', !open);
+        dropdown.setAttribute('data-open', !open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e) {
+        if (!dropdown.contains(e.target)) {
+          trigger.setAttribute('aria-expanded', 'false');
+          dropdown.setAttribute('data-open', 'false');
+        }
+      });
+    })();
   </script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
 </body>
