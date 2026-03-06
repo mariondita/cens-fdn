@@ -35,10 +35,10 @@ pageKey: "about-us"
     <div class="team-modal" id="team-modal-{{ loop.index0 }}" role="dialog" aria-modal="true" aria-labelledby="team-modal-title-{{ loop.index0 }}" aria-describedby="team-modal-bio-{{ loop.index0 }}" hidden style="display: none !important;">
       <div class="team-modal__backdrop" data-close-modal></div>
       <div class="team-modal__content">
-        <button type="button" class="team-modal__close" aria-label="Close" data-close-modal>&times;</button>
         <h3 class="team-modal__name" id="team-modal-title-{{ loop.index0 }}">{{ member.name }}</h3>
         <p class="team-modal__title">{{ member.role }}</p>
         <div class="team-modal__bio" id="team-modal-bio-{{ loop.index0 }}">{{ member.bio }}</div>
+        <button type="button" class="team-modal__close" aria-label="Close" data-close-modal>&times;</button>
       </div>
     </div>
     {% endfor %}
