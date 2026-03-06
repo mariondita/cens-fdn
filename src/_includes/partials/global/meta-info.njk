@@ -1,4 +1,4 @@
-{% set siteTitle = t.siteName if t else site.name %}
+{% set siteTitle = langT.siteName if langT else site.name %}
 {% set pageTitle = title + ' - ' + siteTitle %}
 {% set pageDesc = '' %}
 {% set currentUrl = site.url + page.url %}

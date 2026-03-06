@@ -1,9 +1,10 @@
 {% set currentLang = lang | default({ code: "ca", name: "Català", default: true }) %}
-{% if t %}
+{% set langT = i18n[currentLang.code] %}
+{% if langT %}
 {% set navItems = [
-  { text: t.nav.home, url: "/" + currentLang.code + "/" },
-  { text: t.nav.about, url: "/" + currentLang.code + "/about-us/" },
-  { text: t.nav.contact, url: "/" + currentLang.code + "/contact/" }
+  { text: langT.nav.home, url: "/" + currentLang.code + "/" },
+  { text: langT.nav.about, url: "/" + currentLang.code + "/about-us/" },
+  { text: langT.nav.contact, url: "/" + currentLang.code + "/contact/" }
 ] %}
 {% endif %}
 <!DOCTYPE html>

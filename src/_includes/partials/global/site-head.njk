@@ -1,8 +1,8 @@
 {% set currentLang = lang | default({ code: "ca", name: "Català", default: true }) %}
 {% set navItems = navItems | default(navigation.items) %}
-{% set siteNameForLang = t.siteName if t else site.name %}
-{% set homeLabel = t.common.home if t else "Home" %}
-<a class="skip-link" href="#main-content">{{ t.common.skipToContent if t else "Skip to content" }}</a>
+{% set siteNameForLang = langT.siteName if langT else site.name %}
+{% set homeLabel = langT.common.home if langT else "Home" %}
+<a class="skip-link" href="#main-content">{{ langT.common.skipToContent if langT else "Skip to content" }}</a>
 <header role="banner" class="[ site-head ] [ pad-top-700 pad-bottom-700 ]">
   <div class="wrapper">
     <div class="[ site-head__inner ] [ md:box-flex space-between align-center ]">
