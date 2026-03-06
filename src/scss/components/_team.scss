@@ -98,12 +98,14 @@
   &__backdrop {
     position: absolute;
     inset: 0;
+    z-index: 0;
     background: rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }
 
   &__content {
     position: relative;
+    z-index: 1;
     max-width: 32rem;
     max-height: 85vh;
     overflow: auto;
@@ -118,8 +120,9 @@
     top: get-size(400);
     right: get-size(400);
     left: auto;
-    width: 2rem;
-    height: 2rem;
+    z-index: 2;
+    width: 2.5rem;
+    height: 2.5rem;
     padding: 0;
     border: none;
     background: transparent;

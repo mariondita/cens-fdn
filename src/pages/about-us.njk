@@ -75,9 +75,21 @@ pageKey: "about-us"
         cards.forEach(function(card) {
           card.addEventListener('click', function() { openModal(this.getAttribute('data-team-index')); });
         });
-        document.querySelectorAll('[data-close-modal]').forEach(function(btn) {
-          btn.addEventListener('click', closeModal);
+        document.querySelectorAll('[data-close-modal]').forEach(function(el) {
+          el.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            closeModal();
+          });
         });
+        if (modalsWrap) {
+          modalsWrap.addEventListener('click', function(e) {
+            if (e.target.closest('[data-close-modal]')) {
+              e.preventDefault();
+              closeModal();
+            }
+          });
+        }
         document.addEventListener('keydown', function(e) {
           if (e.key === 'Escape') closeModal();
         });
