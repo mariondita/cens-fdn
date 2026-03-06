@@ -13,7 +13,7 @@ module.exports = function(value, outputPath) {
     const document = DOM.window.document;
     const articleImages = [...document.querySelectorAll('main article img, .intro img')];
     const articleHeadings = [
-      ...document.querySelectorAll('main article h2:not(.team-card__name):not(.no-permalink), main article h3:not(.team-card__name):not(.no-permalink)')
+      ...document.querySelectorAll('main article h2:not(.team-card__name):not(.team-modal__name):not(.no-permalink), main article h3:not(.team-card__name):not(.team-modal__name):not(.no-permalink)')
     ];
     const articleEmbeds = [...document.querySelectorAll('main article iframe')];
 

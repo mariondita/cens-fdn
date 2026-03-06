@@ -20,15 +20,55 @@ pageKey: "about-us"
   <h2>{{ t.about.teamHeading }}</h2>
   <div class="team-grid">
     {% for member in t.about.team %}
-    <article class="team-card">
+    <button type="button" class="team-card" data-team-index="{{ loop.index0 }}" aria-haspopup="dialog" aria-label="{{ member.name }}, {{ member.role }}">
       <div class="team-card__image">
-        <img src="/images/team/{{ member.image }}" alt="{{ member.name }}" loading="lazy">
+        <img src="/images/team/{{ member.image }}" alt="" loading="lazy">
       </div>
-      <h3 class="team-card__name">{{ member.name }}</h3>
-      <p class="team-card__title">{{ member.role }}</p>
-      <p class="team-card__description">{{ member.bio }}</p>
-      <a href="{{ member.profileUrl or '#' }}" class="team-card__link">{{ t.about.viewProfile }}</a>
-    </article>
+      <span class="team-card__name">{{ member.name }}</span>
+      <span class="team-card__title">{{ member.role }}</span>
+    </button>
     {% endfor %}
   </div>
+
+  <div class="team-modals" aria-hidden="true">
+    {% for member in t.about.team %}
+    <div class="team-modal" id="team-modal-{{ loop.index0 }}" role="dialog" aria-modal="true" aria-labelledby="team-modal-title-{{ loop.index0 }}" aria-describedby="team-modal-bio-{{ loop.index0 }}" hidden>
+      <div class="team-modal__backdrop" data-close-modal></div>
+      <div class="team-modal__content">
+        <button type="button" class="team-modal__close" aria-label="Close" data-close-modal>&times;</button>
+        <h3 class="team-modal__name" id="team-modal-title-{{ loop.index0 }}">{{ member.name }}</h3>
+        <p class="team-modal__title">{{ member.role }}</p>
+        <div class="team-modal__bio" id="team-modal-bio-{{ loop.index0 }}">{{ member.bio }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <script>
+    (function() {
+      var cards = document.querySelectorAll('.team-card[data-team-index]');
+      var modals = document.querySelectorAll('.team-modal');
+      function openModal(index) {
+        var modal = document.getElementById('team-modal-' + index);
+        if (!modal) return;
+        modal.removeAttribute('hidden');
+        modal.closest('.team-modals').setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        modals.forEach(function(m) { m.setAttribute('hidden', ''); });
+        document.querySelector('.team-modals').setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+      cards.forEach(function(card) {
+        card.addEventListener('click', function() { openModal(this.getAttribute('data-team-index')); });
+      });
+      document.querySelectorAll('[data-close-modal]').forEach(function(btn) {
+        btn.addEventListener('click', closeModal);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
 </div>
