@@ -116,8 +116,8 @@
   &__close {
     position: absolute;
     top: get-size(400);
-    left: get-size(400);
-    right: auto;
+    right: get-size(400);
+    left: auto;
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -140,7 +140,7 @@
     font-weight: 700;
     color: var(--color-text);
     margin: 0 0 get-size(200) 0;
-    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     line-height: 1.2;
   }
 
