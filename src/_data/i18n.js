@@ -102,7 +102,7 @@ module.exports = {
     siteShortDesc: 'The Science in Society Foundation was established in 2005 to promote and foster Scientific Culture in society.',
     nav: {
       home: 'Home',
-      about: 'Us',
+      about: 'About us',
       contact: 'Contact'
     },
     home: {
