@@ -106,6 +106,7 @@
   &__content {
     position: relative;
     z-index: 1;
+    direction: ltr;
     max-width: 32rem;
     max-height: 85vh;
     overflow: auto;
@@ -116,10 +117,10 @@
   }
 
   &__close {
-    position: absolute;
-    top: get-size(400);
-    right: get-size(400);
-    left: auto;
+    position: absolute !important;
+    top: get-size(400) !important;
+    right: get-size(400) !important;
+    left: auto !important;
     z-index: 2;
     width: 2.5rem;
     height: 2.5rem;
