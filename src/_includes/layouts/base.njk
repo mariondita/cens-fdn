@@ -7,6 +7,8 @@
 {% set title = langT.about.title %}
 {% elif pageKey == "contact" %}
 {% set title = langT.contact.title %}
+{% elif pageKey == "cookies" %}
+{% set title = langT.cookies.title %}
 {% endif %}
 {% endif %}
 {% if langT %}
@@ -41,6 +43,7 @@
   {% block content %}
   {% endblock content %}
   {% include "partials/global/site-foot.njk" %}
+  {% include "partials/global/cookie-consent.njk" %}
   {% block foot %}
   {% endblock %}
 
@@ -68,6 +71,8 @@
       });
     })();
   </script>
+  {% if false %}
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+  {% endif %}
 </body>
 </html>

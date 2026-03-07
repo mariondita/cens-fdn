@@ -46,6 +46,21 @@ module.exports = {
     common: {
       skipToContent: 'Salta al contingut',
       home: 'Inici'
+    },
+    cookieConsent: {
+      message: 'Aquest lloc web utilitza galetes per millorar la vostra experiència. En continuar, accepteu la nostra política de galetes.',
+      acceptAll: 'Acceptar totes',
+      acceptNecessary: 'Només necessàries',
+      policyLink: 'Política de galetes'
+    },
+    cookies: {
+      title: 'Política de galetes',
+      metaDesc: 'Informació sobre l\'ús de galetes a la web de la Fundació Ciència en Societat.',
+      intro: 'Aquesta pàgina descriu com la Fundació Ciència en Societat utilitza les galetes.',
+      necessaryTitle: 'Galetes estrictament necessàries',
+      necessaryBody: 'Són essencials per al funcionament del lloc (per exemple, preferència de consentiment). No es poden desactivar.',
+      optionalTitle: 'Galetes opcionals',
+      optionalBody: 'Inclouen serveis de tercers com xarxes socials o analytics. Només es carreguen si accepteu totes les galetes.'
     }
   },
   es: {
@@ -95,6 +110,21 @@ module.exports = {
     common: {
       skipToContent: 'Saltar al contenido',
       home: 'Inicio'
+    },
+    cookieConsent: {
+      message: 'Este sitio web utiliza cookies para mejorar su experiencia. Al continuar, acepta nuestra política de cookies.',
+      acceptAll: 'Aceptar todas',
+      acceptNecessary: 'Solo necesarias',
+      policyLink: 'Política de cookies'
+    },
+    cookies: {
+      title: 'Política de cookies',
+      metaDesc: 'Información sobre el uso de cookies en la web de la Fundación Ciencia en Sociedad.',
+      intro: 'Esta página describe cómo la Fundación Ciencia en Sociedad utiliza las cookies.',
+      necessaryTitle: 'Cookies estrictamente necesarias',
+      necessaryBody: 'Son esenciales para el funcionamiento del sitio (por ejemplo, preferencia de consentimiento). No se pueden desactivar.',
+      optionalTitle: 'Cookies opcionales',
+      optionalBody: 'Incluyen servicios de terceros como redes sociales o analytics. Solo se cargan si acepta todas las cookies.'
     }
   },
   en: {
@@ -144,6 +174,21 @@ module.exports = {
     common: {
       skipToContent: 'Skip to content',
       home: 'Home'
+    },
+    cookieConsent: {
+      message: 'This website uses cookies to improve your experience. By continuing, you accept our cookie policy.',
+      acceptAll: 'Accept all',
+      acceptNecessary: 'Necessary only',
+      policyLink: 'Cookie policy'
+    },
+    cookies: {
+      title: 'Cookie policy',
+      metaDesc: 'Information about cookie use on the Science in Society Foundation website.',
+      intro: 'This page describes how the Science in Society Foundation uses cookies.',
+      necessaryTitle: 'Strictly necessary cookies',
+      necessaryBody: 'They are essential for the site to work (e.g. consent preference). They cannot be disabled.',
+      optionalTitle: 'Optional cookies',
+      optionalBody: 'They include third-party services such as social networks or analytics. They are only loaded if you accept all cookies.'
     }
   }
 };

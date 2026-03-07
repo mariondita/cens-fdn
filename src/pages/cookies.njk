@@ -1,0 +1,22 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang.code }}/cookies/index.html"
+layout: layouts/page.njk
+pageKey: "cookies"
+---
+
+{% set t = i18n[lang.code] %}
+{% set title = t.cookies.title %}
+{% set metaDesc = t.cookies.metaDesc %}
+{% set introHeading = t.cookies.title %}
+
+<div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-300 pad-bottom-500 text-500 ] [ sf-flow ] [ e-content ]">
+  <p>{{ t.cookies.intro }}</p>
+  <h2>{{ t.cookies.necessaryTitle }}</h2>
+  <p>{{ t.cookies.necessaryBody }}</p>
+  <h2>{{ t.cookies.optionalTitle }}</h2>
+  <p>{{ t.cookies.optionalBody }}</p>
+</div>

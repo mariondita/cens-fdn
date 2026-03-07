@@ -1,0 +1,48 @@
+{% set cc = langT.cookieConsent if langT and langT.cookieConsent else i18n.ca.cookieConsent %}
+{% set cookiesUrl = "/" + (currentLang.code if currentLang else "ca") + "/cookies/" %}
+<div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie consent" aria-live="polite" hidden>
+  <div class="cookie-consent__inner">
+    <p class="cookie-consent__message">{{ cc.message }}</p>
+    <div class="cookie-consent__actions">
+      <a href="{{ cookiesUrl }}" class="cookie-consent__link">{{ cc.policyLink }}</a>
+      <button type="button" class="cookie-consent__btn cookie-consent__btn--necessary" data-consent="necessary">{{ cc.acceptNecessary }}</button>
+      <button type="button" class="cookie-consent__btn cookie-consent__btn--all" data-consent="all">{{ cc.acceptAll }}</button>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var STORAGE_KEY = 'cookie-consent';
+  var banner = document.getElementById('cookie-consent');
+  if (!banner) return;
+  var consent = localStorage.getItem(STORAGE_KEY);
+  function hideBanner() {
+    banner.setAttribute('hidden', '');
+    banner.classList.remove('cookie-consent--visible');
+  }
+  function showBanner() {
+    banner.removeAttribute('hidden');
+    banner.classList.add('cookie-consent--visible');
+  }
+  function saveConsent(value) {
+    localStorage.setItem(STORAGE_KEY, value);
+    hideBanner();
+    if (value === 'all') loadOptionalScripts();
+  }
+  function loadOptionalScripts() {
+    var s = document.createElement('script');
+    s.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+    s.defer = true;
+    document.body.appendChild(s);
+  }
+  if (consent === 'all' || consent === 'necessary') {
+    hideBanner();
+    if (consent === 'all') loadOptionalScripts();
+  } else {
+    showBanner();
+  }
+  banner.querySelectorAll('[data-consent]').forEach(function(btn) {
+    btn.addEventListener('click', function() { saveConsent(this.getAttribute('data-consent')); });
+  });
+})();
+</script>
