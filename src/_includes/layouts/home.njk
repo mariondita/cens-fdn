@@ -3,6 +3,8 @@
 {# Intro content: use langT so language is correct when layout runs #}
 {% set introHeading = introHeading or (langT.home.title if langT else title) %}
 {% set introSummary = introSummary or (langT.home.intro if langT else (content | safe)) %}
+{% set introPadTop = '900' %}
+{% set introPadBottom = '900' %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
